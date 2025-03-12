@@ -1,0 +1,111 @@
+body {
+    background: #feffda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card-container {
+  display: flex;
+  position: absolute;
+  top: 12px;
+  gap: 20px;
+}
+
+.card {
+  background: #5fdace;
+  border-radius: 90px;
+  text-align: center;
+  width: 130px;
+  height: 300px;
+  overflow: hidden;
+}
+.ebrahim{
+  background: #b8f5b9;
+}
+.mohamed{
+    background: #97bfc4;
+}
+
+.message{
+    display: flex;
+    position: absolute;
+    top: 310px;
+    gap: 20px;
+    background: #ceff74;
+    border-radius: 90px;
+    text-align: center;
+    width: 170px;
+    height: 50px;
+    overflow: hidden;
+    opacity: 0;
+}
+.card:hover .message{
+  opacity: 1;
+}
+.message p{
+    font-size: 22px;
+    text-align: center;
+    margin: 11px auto;
+    color: #555;
+    width: 100%;
+}
+.ebrahim-msg{
+    /* width: auto; */
+}
+
+.image-container {
+  width: 130px;
+  height: 300px;
+  border-radius: 123px / 120px;
+  overflow: hidden;
+  margin-top: 12px;
+  background-size: cover;
+  background-position: center;
+}
+.image-container img {
+    width: 150%;
+    height: 100%;
+    object-fit:cover; 
+    transform: scale(0.8);
+    margin-left: -25%;
+    margin-top: -25%;
+}
+
+/* .sydney {
+  background-image: url('your-image-url-2.jpg');
+  background-color: #f4f3f1;
+}
+
+.stephani {
+  background-image: url('your-image-url-3.jpg');
+  background-color: #d7e6f5;
+}
+
+.rachel {
+  background-image: url('your-image-url-4.jpg');
+  background-color: #fde5dc;
+} */
+
+h3 {
+  margin: 10px 0 5px;
+  margin-top: 23px;
+  font-size: 20px;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+  
+@media (max-width: 768px) {
+    /*scale all cards*/
+    .card-container {
+        position: absolute;
+        top: 0%;
+        transform: scale(0.5);
+    }
+}
